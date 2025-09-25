@@ -1,0 +1,10 @@
+[project]
+name = "workshop-scaneo-bids2025"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "eotdl>=2025.6.27.post2",
+    "scaneo>=2025.6.23",
+]
