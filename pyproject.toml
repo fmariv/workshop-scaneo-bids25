@@ -7,5 +7,10 @@ requires-python = ">=3.12"
 dependencies = [
     "eotdl>=2025.6.27.post2",
     "ipykernel>=6.30.1",
+    "numpy>=2.3.3",
+    "onnxruntime>=1.23.0",
+    "python-multipart>=0.0.20",
     "scaneo>=2025.6.23",
+    "scikit-image>=0.25.2",
+    "torch>=2.8.0",
 ]
