@@ -51,6 +51,9 @@ You can follow the tutorial in two ways:
 
       `uv sync`
 
+    - If you prefer, you can continue using `pip`
+      `pip install scaneo`
+
     - Open the notebook in Visual Studio Code or your preferred IDE.
 
 Any questions? Let’s get started with the notebook!
