@@ -12,8 +12,14 @@ In addition to SCANEO, we will briefly cover how to integrate these labeled data
 
 This tutorial will be heavily based on the SCANEO graphical interface, so there are few notebooks:
 
-1. [SCANEO](01_scaneo.ipynb)
-2. [How to contribute](02_contributing.ipynb)
+1. [Introduction to SCANEO](01_scaneo.ipynb)
+2. [Introduction to the EOTDL](02_eotdl.ipynb)
+3. [Exploring datasets and models with the EOTDL](03_exploring.ipynb)
+4. [Labelling with SCANEO](04_scaneo_labelling.ipynb)
+5. [Ingesting a dataset to the EOTDL](05_ingesting_dataset.ipynb)
+6. [Training a model](06_training.ipynb)
+7. [Ingesting a model to the EOTDL](07_ingesting_models.ipynb)
+8. [How to contribute](02_contributing.ipynb)
 
 ## Getting Started
 
@@ -27,9 +33,21 @@ You can follow the tutorial in two ways:
 
     `git clone https://github.com/fmariv/workshop-scaneo-bids25.git`
 
-    - Install Python (minimum version 3.12) and create a virtual environment using [uv](https://docs.astral.sh/uv/). If you don't have `uv` installed, you can follow the instructions [here](https://docs.astral.sh/uv/getting-started/installation/)
+    - Install Python (minimum version 3.12) and create a virtual environment using [uv](https://docs.astral.sh/uv/). If you don't have `uv` installed, you can install it using it's [standalone installer](https://docs.astral.sh/uv/getting-started/installation/#installation-methods).
 
-    - Synchronize the environment:
+      - macOS and Linux
+
+        - Use `curl` to download the script and execute it with sh:
+          `curl -LsSf https://astral.sh/uv/install.sh | sh`
+        - If your system doesn't have `curl`, you can use `wget`:
+          `wget -qO- https://astral.sh/uv/install.sh | sh`
+
+      - Windows
+        - Use `irm` to download the script and execute it with `iex`:
+          `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+        - Changing the [execution policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4#powershell-execution-policies) allows running a script from the internet.
+
+    - Now that you have `uv` installed, you can synchronize the environment:
 
       `uv sync`
 
